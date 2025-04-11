@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Responsive</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            .header {
+                background-color: lightgrey;
+                padding: 15px;
+                text-align: center;
+            }
+
+            .menu {
+                float: left;
+                width: 20%;
+            }
+
+            .menu a {
+                background-color: lightgrey;
+                text-decoration: none;
+                color: black;
+                text-align: center;
+                padding: 8px;
+                margin-top: 7px;
+                display: block;
+            }
+
+            .main {
+                float: left;
+                width: 60%;
+                padding: 15px;
+            }
+
+            .right {
+                float: left;
+                width: 20%;
+                background-color: lightgrey;
+                padding: 0px 15px;
+                margin-top: 7px;
+            }
+
+            .footer{
+                background-color: lightgrey;
+                padding: 15px;
+                text-align: center;
+                margin-top: 7px;
+            }
+
+            @media only screen and (max-width:800px) {
+                .main{
+                    width: 80%;
+                }
+
+                .right {
+                    width: 100%;
+                }
+            }
+
+            @media only screen and (max-width:500px) {
+                .menu, .main, .right, .footer {
+                    width: 100%;
+                }
+
+                .main {
+                    padding: 15px 0px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Hello World</h1>
+        </div>
+        <div style="overflow: auto;">
+            <div class="menu">
+                <a href="2.Tags.html">Link 1</a>
+                <a href="5.Styles.html">Link 2</a>
+                <a href="8.HTMLCSS.html">Link3</a>
+                <a href="9.HTMLCSS1.html">Link 4</a>
+            </div>
+            <div class="main">
+                <h2>Lorem Ipsum</h2>
+                <p>Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam
+                    euismod magna.Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae
+                    iaculis nisl.Aenean aliquam molestie leo, vitae iaculis nisl.Diuretics paradis num copo
+                    é motivis de denguis.
+                </p>
+                <img src="img_girl.jpg" style="width: 100%;" alt="Girl wearing jacket">
+                <p>
+                    Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. 
+                    Atirei o pau no gatis, per gatis num morreus.Delegadis gente finis, bibendum egestas augue 
+                    arcu ut est.Quem manda na minha terra sou euzis!
+
+
+                </p>
+            </div>
+            <div class="right">
+                <h2>About</h2>
+                <p>Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis, nisi eros vermeio.
+                    Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.Mais
+                    vale um bebadis conhecidiss, que um alcoolatra anonimis.Atirei o pau no gatis, per gatis
+                    num morreus.
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            © copyright w3schools.com
+        </div>
+    </body>
+</html>
