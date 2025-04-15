@@ -1,1 +1,1 @@
-This is responsive web design file
+This was my first responsive web design while learning HTML and CSS
